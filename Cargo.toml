@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members=[
+    "consensus",
+    "network",
+    "bin/node",
+    "primitives"
+]
+
+default-members = ["bin/node"]
+
+
+[workspace.dependencies]
+primitives = { path = "primitives" }
+consensus = { path = "consensus" }
+vm = {path = "vm" }
+
+tokio = { version = "1.37.0", features = ["full"] }
+rand = { version = "0.8" }

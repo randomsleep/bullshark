@@ -1,0 +1,9 @@
+[package]
+name = "consensus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+primitives = { workspace = true }
+tokio = { workspace = true }
+rand = { workspace = true }
